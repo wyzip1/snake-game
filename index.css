@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.scene {
+  width: 500px;
+  height: 500px;
+  background-color: rgb(83, 83, 83);
+  box-shadow: 0 0 3px 1px rgb(0, 0, 0);
+  position: relative;
+}
+
+.body,
+.food,
+.player {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(125, 111, 245);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.food {
+  background-color: rgb(245, 191, 111);
+}
+
+.body {
+  background-color: rgb(143, 131, 255);
+}
+
+.reload,
+.noDeath {
+  position: absolute;
+  top: 0;
+  left: -160px;
+  width: 150px;
+  height: 30px;
+  background-color: rgb(125, 111, 245);
+  color: #fff;
+  border: 0;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.reload:hover,
+.noDeath:hover {
+  background-color: rgb(143, 131, 255);
+}
+
+.noDeath {
+  top: 40px
+}
+
+.noDeath.active {
+  background-color: rgb(76, 65, 173);
+}
+
+.noDeath.active:hover {
+  background-color: rgb(108, 101, 172);
+}
